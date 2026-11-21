@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obi Family - ShutBerry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #3b82f6;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Tajawal', sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        
+        /* Header */
+        header { text-align: center; padding: 60px 20px; background: linear-gradient(180deg, #1e3a8a 0%, var(--bg-color) 100%); }
+        .logo-container { margin-bottom: 20px; }
+        .logo-o { font-size: 4em; font-weight: 900; color: var(--primary); line-height: 1; }
+        .logo-text { font-size: 2em; font-weight: 700; letter-spacing: 2px; }
+        .logo-pill { background: var(--primary); padding: 2px 12px; border-radius: 20px; font-size: 1.2em; vertical-align: middle; margin-right: 10px; }
+        .subtitle { color: var(--text-muted); font-size: 1.2em; margin-top: 10px; }
+
+        /* Apps Section */
+        .section-title { text-align: center; font-size: 1.8em; margin: 50px 0 30px; color: var(--primary); }
+        .apps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1000px; margin: auto; padding: 0 20px; }
+        .app-card { background: var(--card-bg); border-radius: 16px; padding: 25px; border: 1px solid #334155; text-align: center; transition: transform 0.3s, box-shadow 0.3s; }
+        .app-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2); border-color: var(--primary); }
+        .app-icon { width: 80px; height: 80px; border-radius: 20px; background: #0f172a; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 2em; font-weight: 900; color: var(--primary); border: 2px solid var(--primary); }
+        .app-name { font-size: 1.4em; font-weight: 700; margin-bottom: 10px; }
+        .app-desc { color: var(--text-muted); font-size: 0.95em; margin-bottom: 20px; }
+        .btn { display: inline-block; padding: 10px 25px; border-radius: 8px; text-decoration: none; font-weight: 700; transition: 0.3s; }
+        .btn-primary { background: var(--primary); color: #fff; }
+        .btn-primary:hover { background: #2563eb; }
+        .btn-disabled { background: #334155; color: var(--text-muted); cursor: not-allowed; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; margin-top: 60px; border-top: 1px solid #334155; color: var(--text-muted); font-size: 0.9em; }
+        .footer-links { margin-bottom: 15px; }
+        .footer-links a { color: var(--primary); text-decoration: none; margin: 0 10px; }
+        .footer-links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-o">O</div>
+            <div>
+                <span class="logo-text">Obi</span>
+                <span class="logo-pill">Family</span>
+            </div>
+        </div>
+        <p class="subtitle">أدوات احترافية، بدون اشتراكات مزعجة. من ShutBerry.</p>
+    </header>
+
+    <!-- Apps -->
+    <h2 class="section-title">تطبيقاتنا</h2>
+    <div class="apps-grid">
+        
+        <!-- Obi Files -->
+        <div class="app-card">
+            <div class="app-icon">O</div>
+            <div class="app-name">Obi Files</div>
+            <p class="app-desc">مدير ملفات، ماسح ضوئي، محرر PDF، وسيرفر محلي. كل اللي محتاجه في تطبيق واحد.</p>
+            <a href="#" class="btn btn-disabled">قريباً على Google Play</a>
+        </div>
+
+        <!-- Obi VE (Placeholder) -->
+        <div class="app-card">
+            <div class="app-icon">O</div>
+            <div class="app-name">Obi VE</div>
+            <p class="app-desc">محرر فيديو احترافي على الموبايل. تايملاين، تأثيرات، وذكاء اصطناعي.</p>
+            <a href="#" class="btn btn-disabled">قريباً</a>
+        </div>
+
+        <!-- Obi Photo (Placeholder) -->
+        <div class="app-card">
+            <div class="app-icon">O</div>
+            <div class="app-name">Obi Photo</div>
+            <p class="app-desc">محرر صور احترافي، بديلك عن Lightroom وSnapseed بدون تعقيد.</p>
+            <a href="#" class="btn btn-disabled">قريباً</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="privacy_policy.html">سياسة الخصوصية</a>
+            <a href="terms_and_conditions.html">الشروط والأحكام</a>
+        </div>
+        <p>&copy; 2026 ShutBerry. All rights reserved.</p>
+    </footer>
+
+</body>
+  </html>
